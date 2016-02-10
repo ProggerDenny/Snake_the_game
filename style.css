@@ -1,0 +1,135 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: serif;
+}
+
+body{
+	background-color: #aaa;
+}
+
+select{
+	font-size: 2em;
+	border: white groove 4px;
+	color: orange;
+}
+
+
+h2:nth-child(n+2){
+	border-top: 10px double #ccc;
+	margin: 6px 0;
+}
+
+div h3{
+	position: absolute;
+	top: 100px;
+	right: 120px;
+	font-size: 20pt;
+}
+
+.speaker_wrapper{
+	margin: 20px;
+	background-color: #E0FFFF;
+	float: left;
+	border: 50px outset rgb(12, 221, 227);
+	border-top-color: #ccc;
+	border-bottom-color: #ccc;
+	border-radius: 5px; 
+	text-align: center;
+}
+
+.field{
+	background-image: url(images/cell_field_30px.png);
+	height: 600px;
+	width: 600px;
+	margin: 30px auto;
+	position: relative;
+	border-radius: 5%;
+	border: solid 10px #888;
+
+}
+
+.snake{
+	display: block;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.head{
+	background-color: yellow;
+	border: solid orange 3px;
+	width: 24px;
+	height: 24px;
+	left: 30px;
+	top: 60px;
+}
+
+
+.body{
+	background-color: black;
+	left: -300px;
+	top: -300px;
+	border: solid gray 3px;
+	width: 24px;
+	height: 24px;
+}
+
+.simple_food{
+	background-color: cyan;
+	border: solid 5px white;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	left: 90px;
+	top: 90px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 10px rgba(0,0,100,0.2)
+}
+
+.score{ 
+	border: 50px inset rgba(107, 144, 201, 0.2); 
+	background: cyan; 
+	height: 150px; 
+	width: 150px; 
+	margin: 50px 50px; 
+	border-radius: 10px; 
+	line-height: 150px; 
+	font-size: 60pt; 
+	text-align: center; 
+	border-top: 50px outset #ccc; 
+	border-bottom: 50px inset #ccc; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+.bonus{
+	background-color: red;
+	border: solid 5px white;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	left: -300px;
+	top: -300px;
+	border-radius: 50%;
+}
+
+#game_over{
+	background: rgba(211, 75, 67, 0.9); 
+	border: 130px inset rgba(186, 0, 0, 1); 
+	padding: 4px 4px 4px 4px; 
+	display: inline-block; 
+	width: 700px; 
+	font-family: "Comic Sans", sans-serif; 
+	font-size: 80pt; 
+	color: rgba(99, 0, 0, 1); 
+	text-decoration: inherit; 
+	text-align: inherit; 
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+}
